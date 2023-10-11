@@ -113,10 +113,3 @@ function startagain() {
     });
 
 
-// getbubbleElem();
-
-
-// bubblecreat();
-
-// settimer();
-// sethit();
