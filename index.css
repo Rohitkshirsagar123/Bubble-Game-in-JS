@@ -1,0 +1,141 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.main_sec{
+    background-color: black;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    height: 100vh;
+}
+
+.game_sec{
+    /* padding: 20px; */
+    overflow: hidden;
+    background-color: rgb(65, 69, 69);
+    height: 80%;
+    width: 80%;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+}
+.gabovesec{
+    width: 100%;
+    height: 80px;
+    background-color: azure;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+
+}
+.selem_sec{
+    display: flex;
+    gap: 10px;
+}
+.box_elem{
+   height: 30px;
+   width: 50px;
+    background-color: rgb(20, 21, 19);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: white;
+    font-weight: 600;
+    font-size: 17px;
+}
+.gbelowsec{
+    width: 100%;
+    height: calc(100% - 80px);
+    padding: 10px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    /* margin: 10px; */
+}
+.bubble{
+    height: 45px;
+    width: 45px;
+    border-radius: 50%;
+    background-color: rgb(255, 240, 252);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: 600;
+    font-size: 25px;
+}
+.bubble:hover{
+    cursor: pointer;
+    background-color: aqua;
+}
+
+#gameSec{
+    
+    padding: 20px;
+    display: grid;
+    align-items: center;
+    color: white;
+    height: 300px;
+    text-align: center;
+}
+
+
+
+
+/* CSS */
+#startBtn {
+  bottom: 0;
+  align-items: center;
+  background-image: linear-gradient(144deg,#AF40FF, #5B42F3 50%,#00DDEB);
+  border: 0;
+  border-radius: 8px;
+  box-shadow: rgba(151, 65, 252, 0.2) 0 15px 30px -5px;
+  box-sizing: border-box;
+  color: #FFFFFF;
+  display: flex;
+  font-family: Phantomsans, sans-serif;
+  font-size: 10px;
+  justify-content: center;
+  line-height: 1em;
+  max-width: 100%;
+  min-width: 140px;
+  padding: 10px 14px;
+  text-decoration: none;
+  user-select: none;
+  -webkit-user-select: none;
+  touch-action: manipulation;
+  white-space: nowrap;
+  cursor: pointer;
+}
+
+#startBtn:active,
+#startBtn:hover {
+  outline: 0;
+  border: 1px solid rgb(141, 141, 223);
+}
+
+@media (min-width: 768px) {
+  #startBtn {
+    font-size: 20px;
+    min-width: 196px;
+  }
+}
+
+@media (max-width:460px){
+    .gabovesec {
+    display: flex;
+    /* align-items: center; */
+    justify-content: none;
+    flex-wrap: wrap;
+    }
+    /* .gbelowsec {
+        width: 100%;
+        height: calc(100% - 80px);
+        padding: 10px;
+    } */
+}
+
