@@ -55,11 +55,15 @@ function settimer(){
         }
         else{
             let d= document.querySelector('.gbelowsec');
+            let highestScore = 400; // Replace with your actual highest score
+           
+            let resultMessage = score > highestScore ? "You are win" : "You are loose the game";
+
            d.innerHTML=`<div id="gameSec">
                             <h1>Bubble Game</h1>
-                            <h1>Highest Score is 400</h1>
+                            <h1>Highest Score is ${highestScore}</h1>
                             <h1>Your score is ${score}</h1>  
-                            <h1>You loose the game !!! &#128549;</h1> 
+                            <h1>${resultMessage} ${score > highestScore ? '🎉' : '😞'}</h1> 
                             <button id="startBtn" onclick="startagain()">Start Again</button>
                             
                         </div>`;
