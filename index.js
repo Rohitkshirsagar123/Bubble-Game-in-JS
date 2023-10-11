@@ -4,6 +4,7 @@ var bubblern=0;
 var timer=60;
 var sethitnum;
 var score=0;
+var highestScore=100;
 
 
 // game start  function
@@ -55,7 +56,7 @@ function settimer(){
         }
         else{
             let d= document.querySelector('.gbelowsec');
-            let highestScore = 400; // Replace with your actual highest score
+            // highestScore = 100; // Replace with your actual highest score
            
             let resultMessage = score > highestScore ? "You are win" : "You are loose the game";
 
@@ -69,6 +70,9 @@ function settimer(){
                         </div>`;
                        
             clearInterval(setintt);
+            if (score > highestScore) {
+                highestScore=score;
+            }
         }
 
     },1000);
