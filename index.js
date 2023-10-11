@@ -57,7 +57,7 @@ function settimer(){
             let d= document.querySelector('.gbelowsec');
            d.innerHTML=`<div id="gameSec">
                             <h1>Bubble Game</h1>
-                            <h1>Highest Score is 320</h1>
+                            <h1>Highest Score is 400</h1>
                             <h1>Your score is ${score}</h1>  
                             <h1>You loose the game !!! &#128549;</h1> 
                             <button id="startBtn" onclick="startagain()">Start Again</button>
